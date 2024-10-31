@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f0e68c; /* Light yellow background */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background: #ff6f61; /* Retro coral color */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px #ffcc00; /* Yellow shadow */
+}
+
+nav {
+  font-size: 1.2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffcc00; /* Bright yellow hover */
+}
+
+/* Marketplace Styles */
+.nft-marketplace {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* NFT Card Styles */
+.nft-card {
+  background: #fff3e0; /* Soft peach background */
+  border: 2px solid #ff6f61; /* Coral border */
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.nft-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.nft-card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.nft-card h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.nft-card p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+/* Button Styles */
+button {
+  background-color: #ff6f61; /* Coral button */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #ffcc00; /* Bright yellow on hover */
+  transform: scale(1.05);
+}
+
+/* Form Styles */
+form {
+  background: #fff3e0; /* Form background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: auto;
+}
+
+form input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #ff6f61; /* Coral border */
+  border-radius: 5px;
+}
+
+form input:focus {
+  border-color: #ffcc00; /* Bright yellow focus */
+  outline: none;
+}
